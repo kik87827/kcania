@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- layer -->
+		<div class="dimlayer_z" id="layer_login">
+			<div class="dimbg"></div>
+			<div class="dimlayer_tb">
+				<div class="dimlayer_td">
+					<div class="layer_box">
+						<div class="layer_titlow"><h2 class="layer_tit">로그인</h2></div>
+						<div class="layer_cont has_login_form">
+							<div class="login_formlogo_low"><img src="./images/login_logo.png" alt="KCANIA"></div>
+							<div class="login_formcopy">반갑습니다<br>한국 탄소&middot;나노 정보 플랫폼 입니다</div>
+							<fieldset class="login_form">
+								<legend>로그인</legend>
+								<div class="form_vlow">
+									<input type="text" class="form_input" placeholder="이메일 주소">
+									<div class="form_warn_para">아이디를 입력해주세요.</div>
+								</div>
+								<div class="form_vlow">
+									<input type="password" class="form_input" placeholder="비밀번호">
+									<div class="form_warn_para">비밀번호를 입력해주세요.</div>
+								</div>
+								<div class="form_vlow define_else">
+									<div class="chkrd_item">
+										<input type="checkbox" id="idsave" class="chkrd">
+										<label for="idsave" class="chkrd_lab">아이디 저장</label>
+									</div>
+									<a href="#" class="btn_formlink">아이디 &amp; 비밀번호 찾기</a>
+								</div>
+								<div class="form_vlow define_btn_submit"><a href="#" class="btn_formsm">로그인</a></div>
+								<div class="form_vlow define_btn_else"><a href="#" class="btn_formsm type2">KCANIA 회원가입</a></div>
+							</fieldset>
+						</div>
+						<a href="javascript:;" class="btn_layerclose"><span class="hdtext">닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- layer -->
+		<script>
+			dimLayerShow({
+				target : "#layer_login"
+			});
+
+			// 코딩확인용
+			$(function(){
+				var url = window.location.href.split('?')[1];
+				var url_2 = url !== undefined ? url.split('#')[0] : null;
+				if(url_2 == "check"){
+					// 체크
+					$(".form_warn_para").show();
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>

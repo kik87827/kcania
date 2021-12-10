@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- layer -->
+		<div class="dimlayer_z" id="layer_account_result">
+			<div class="dimbg"></div>
+			<div class="dimlayer_tb">
+				<div class="dimlayer_td">
+					<div class="layer_box">
+						<div class="layer_titlow"><h2 class="layer_tit">계정정보 찾기</h2></div>
+						<div class="layer_cont has_login_form">
+							<!-- tab -->
+							<div class="tab_item_hlist d_tabui">
+								<a href="#tab_cont01" class="tab_item active"><span class="tab_item_text">아이디 (이메일)찾기</span></a>
+								<a href="#tab_cont02" class="tab_item"><span class="tab_item_text">비밀번호 찾기</span></a>
+							</div>
+							<!-- tab -->
+							<!-- tab contents -->
+							<div class="tab_cont_w">
+								<div class="tab_cont" id="tab_cont01" style="display: block;">
+									<!-- result -->
+									<div class="result_item_w">
+										<p class="result_item main_item">홍길동 회원님의 아이디 입니다.</p>
+										<p class="result_item sub_item">개인계정 : <span class="rs_sym">abc@kcn.com</span></p>
+									</div>
+									<!-- // result -->
+									<div class="btn_botpos_w respb20">
+										<a href="javascript:;" class="btn_bpsubmit closetrigger">로그인</a><!-- closetrigger 강제 닫기 -->
+									</div>
+								</div>
+								<div class="tab_cont" id="tab_cont02">
+									내용이 들어갑니다.
+								</div>
+							</div>
+							<!-- // tab contents -->
+							
+						</div>
+						<a href="javascript:;" class="btn_layerclose"><span class="hdtext">닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- layer -->
+		<script>
+			dimLayerShow({
+				target : "#layer_account_result",
+				openCallback : function(){
+					subtabFunc();
+				}
+			});
+
+			// 코딩확인용
+			$(function(){
+				var url = window.location.href.split('?')[1];
+				var url_2 = url !== undefined ? url.split('#')[0] : null;
+				if(url_2 == "check"){
+					// 체크
+					$(".form_warn_para").show();
+				}else if(url_2 == "number"){
+					// 인증번호
+					$(".form_result_para").show();
+					$("#linkage_tr").removeClass("hidden_tr");
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>

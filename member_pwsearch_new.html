@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- layer -->
+		<div class="dimlayer_z" id="layer_account_search2">
+			<div class="dimbg"></div>
+			<div class="dimlayer_tb">
+				<div class="dimlayer_td">
+					<div class="layer_box">
+						<div class="layer_titlow"><h2 class="layer_tit">계정정보 찾기</h2></div>
+						<div class="layer_cont has_login_form">
+							<!-- tab -->
+							<div class="tab_item_hlist d_tabui">
+								<a href="#tab_cont01" class="tab_item"><span class="tab_item_text">아이디 (이메일)찾기</span></a>
+								<a href="#tab_cont02" class="tab_item active"><span class="tab_item_text">비밀번호 찾기</span></a>
+							</div>
+							<!-- tab -->
+							<!-- tab contents -->
+							<div class="tab_cont_w">
+								<div class="tab_cont" id="tab_cont01">
+									아이디 (이메일)찾기
+								</div>
+								<div class="tab_cont" id="tab_cont02" style="display:block;">
+									<!-- form -->
+									<fieldset class="lcform">
+										<legend>비밀번호 찾기</legend>
+										<div class="respon_form_tb">
+											<div class="respon_form_tr">
+												<div class="respon_form_cell define_th">
+													<span class="resp_thwpsp">새비밀번호</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<input type="password" class="form_input" placeholder="영문, 숫자 조합 8-12자">
+												</div>
+											</div>
+											<div class="respon_form_tr">
+												<div class="respon_form_cell define_th mbtype2">
+													<span class="resp_thwpsp">새비밀번호 <br class="mb_br">확인</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<input type="password" class="form_input" placeholder="비밀번호 다시 입력">
+												</div>
+											</div>
+										</div>
+									</fieldset>
+									<!-- // form -->
+									<div class="btn_botpos_w type2">
+										<a href="javascript:;" class="btn_bpsubmit closetrigger">저장</a> <!-- closetrigger 강제 닫기 -->
+									</div>
+								</div>
+							</div>
+							<!-- // tab contents -->
+						</div>
+						<a href="javascript:;" class="btn_layerclose"><span class="hdtext">닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- layer -->
+		<script>
+			dimLayerShow({
+				target : "#layer_account_search2",
+				openCallback: function () {
+					subtabFunc();
+				}
+			});
+
+		</script>
+	</div>
+</body>
+</html>

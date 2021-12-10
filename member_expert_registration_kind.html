@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_zone">
+			<div class="header_in">
+				<div class="header_cont">
+					<h1 class="headlogo"><a href="#" class="headlogo_link"><span class="hdtext">KCANIA</span></a></h1>
+				</div>
+				<div class="header_util">
+					<ul class="hutil_hlist">
+						<li><a href="#" class="hutil">전문가 등록</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="midsection">
+			<div class="midcontents">
+				<div class="midcont_titlow">전문가 등록</div>
+				<div class="midcont_tablow">
+					<div class="swiper-container midtab_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">기본정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">전문가 활동분야</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">경력정보</span></a></div>
+                            <div class="swiper-slide midtab-slide active"><a href="#" class="midtab"><span class="midtab_text">전문분야</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">추가 전문분야정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">논문정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">특허정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">외부활동정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">자격정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">연구수행</span></a></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(window).on("load", function () {
+                            midTab();
+							subtabFunc();
+                        });
+						$(function(){
+							// one dep check 클릭
+							$(".mdep_onelow .chkrd").on("click",function(){
+								var $this = $(this);
+								var $this_p = $this.parents(".mdep_w");
+								var $this_pc = $this_p.find(".mdep_twolow");
+								if($(this).prop("checked")){
+									$this_pc.find(".chkrd").prop("checked",true);
+								}else{
+									$this_pc.find(".chkrd").prop("checked",false);
+								}
+							});
+						});
+                    </script>
+				</div>
+				<div class="midcont_contlow">
+					<div class="midcont_contbox">
+						<div class="midbox_titlow">
+							<p class="midbox_tit">전문분야</p>
+							<div class="midbox_titlayer text_emp">(중복 선택 가능)</div>
+						</div>
+						<div class="mdbox_tab_fxwrap d_tabui">
+							<a href="#mdbox_tabcont01" class="mdbox_tab active"><span class="mdbox_tabtext">탄소&middot;나노 소재 분류</span></a>
+							<a href="#mdbox_tabcont02" class="mdbox_tab"><span class="mdbox_tabtext">기능성</span></a>
+							<a href="#mdbox_tabcont03" class="mdbox_tab"><span class="mdbox_tabtext">관련 적용/응용 산업</span></a>
+							<a href="#mdbox_tabcont04" class="mdbox_tab"><span class="mdbox_tabtext">본인의 전문분야</span></a>
+						</div>
+						<div class="mdbox_tabcont_zone">
+							<!-- 탄소&middot;나노 소재 분류  -->
+							<div class="mdbox_tabcont" id="mdbox_tabcont01" style="display:block;">
+								<div class="mdep_vlist_w">
+									<ul class="mdep_vlist">
+										<li>
+											<div class="mdep_w">
+												<div class="mdep_onelow">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_01_one">
+														<label for="mexkind01_01_one" class="chkrd_lab">탄소섬유</label>
+													</div>
+												</div>
+												<div class="mdep_twolow">
+													<ul class="mdep_twovlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_01_two01">
+																<label for="mexkind01_01_two01" class="chkrd_lab">원재료 생산/가공</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_01_two02">
+																<label for="mexkind01_01_two02" class="chkrd_lab">탄소섬유 생산</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_01_two03">
+																<label for="mexkind01_01_two03" class="chkrd_lab">제직</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_01_two04">
+																<label for="mexkind01_01_two04" class="chkrd_lab">프리프레그</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_01_two05">
+																<label for="mexkind01_01_two05" class="chkrd_lab">기타</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_w">
+												<div class="mdep_onelow">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_02_one">
+														<label for="mexkind01_02_one" class="chkrd_lab">활성탄소</label>
+													</div>
+												</div>
+												<div class="mdep_twolow">
+													<ul class="mdep_twovlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_02_two01">
+																<label for="mexkind01_02_two01" class="chkrd_lab">원재료 생산/가공</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_02_two02">
+																<label for="mexkind01_02_two02" class="chkrd_lab">활성탄소 제조</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_02_two03">
+																<label for="mexkind01_02_two03" class="chkrd_lab">첨착/가공</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_02_two04">
+																<label for="mexkind01_02_two04" class="chkrd_lab">모듈 제조</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_02_two05">
+																<label for="mexkind01_02_two05" class="chkrd_lab">기타</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_w">
+												<div class="mdep_onelow">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_03_one">
+														<label for="mexkind01_03_one" class="chkrd_lab">인조흑연</label>
+													</div>
+												</div>
+												<div class="mdep_twolow">
+													<ul class="mdep_twovlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_03_two01">
+																<label for="mexkind01_03_two01" class="chkrd_lab">원재료 생산/가공</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_03_two02">
+																<label for="mexkind01_03_two02" class="chkrd_lab">리튬배터리(음극재)</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_03_two03">
+																<label for="mexkind01_03_two03" class="chkrd_lab">폴리실리콘(등방흑연)</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_03_two04">
+																<label for="mexkind01_03_two04" class="chkrd_lab">전극</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_03_two05">
+																<label for="mexkind01_03_two05" class="chkrd_lab">기타</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_w">
+												<div class="mdep_onelow">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_04_one">
+														<label for="mexkind01_04_one" class="chkrd_lab">카본블랙</label>
+													</div>
+												</div>
+												<div class="mdep_twolow">
+													<ul class="mdep_twovlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_04_two01">
+																<label for="mexkind01_04_two01" class="chkrd_lab">원재료 생산/가공</label> 
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_04_two02">
+																<label for="mexkind01_04_two02" class="chkrd_lab">후처리(표면처리)</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_04_two03">
+																<label for="mexkind01_04_two03" class="chkrd_lab">특수(잉크,이차전지, 연료전지, 코전압용 케이블)</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_04_two04">
+																<label for="mexkind01_04_two04" class="chkrd_lab">기타</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_w">
+												<div class="mdep_onelow">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_05_one">
+														<label for="mexkind01_05_one" class="chkrd_lab">CNT</label>
+													</div>
+												</div>
+												<div class="mdep_twolow">
+													<ul class="mdep_twovlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_05_two01">
+																<label for="mexkind01_05_two01" class="chkrd_lab">CNT 합성/정제</label> 
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_05_two02">
+																<label for="mexkind01_05_two02" class="chkrd_lab">CNT기능화</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_05_two03">
+																<label for="mexkind01_05_two03" class="chkrd_lab">CNT 분산액 제조</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_05_two04">
+																<label for="mexkind01_05_two04" class="chkrd_lab">복합소재 제조</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_05_two05">
+																<label for="mexkind01_05_two05" class="chkrd_lab">코팅/사출성형</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_05_two06">
+																<label for="mexkind01_05_two06" class="chkrd_lab">가공 및 패키징</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_05_two07">
+																<label for="mexkind01_05_two07" class="chkrd_lab">기타</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_w">
+												<div class="mdep_onelow">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_06_one">
+														<label for="mexkind01_06_one" class="chkrd_lab">그래핀</label>
+													</div>
+												</div>
+												<div class="mdep_twolow">
+													<ul class="mdep_twovlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_06_two01">
+																<label for="mexkind01_06_two01" class="chkrd_lab">산화박리</label> 
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_06_two02">
+																<label for="mexkind01_06_two02" class="chkrd_lab">환원공정시스템</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_06_two03">
+																<label for="mexkind01_06_two03" class="chkrd_lab">Cu촉매 원소재</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_06_two04">
+																<label for="mexkind01_06_two04" class="chkrd_lab">CVD시스템</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_06_two05">
+																<label for="mexkind01_06_two05" class="chkrd_lab">전사 공정</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_06_two06">
+																<label for="mexkind01_06_two06" class="chkrd_lab">잉크/페이스트</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="mexkind01_06_two07">
+																<label for="mexkind01_06_two07" class="chkrd_lab">복합체 파우더, 기능화</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="res_intb">
+												<div class="res_incell res_inshort">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_07">
+														<label for="mexkind01_07" class="chkrd_lab">복합체 파우더, 기능화</label>
+													</div>
+												</div>
+												<div class="res_incell res_inlong"><input type="text" class="form_input"></div>
+											</div>
+										</li>
+										<li>
+											<div class="res_intb">
+												<div class="res_incell res_inshort">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_08">
+														<label for="mexkind01_08" class="chkrd_lab">복합재(* 탄소+나노)</label>
+													</div>
+												</div>
+												<div class="res_incell res_inlong"><input type="text" class="form_input"></div>
+											</div>
+										</li>
+										<li>
+											<div class="res_intb">
+												<div class="res_incell res_inshort">
+													<div class="chkrd_item breaktype">
+														<input type="checkbox" class="chkrd" id="mexkind01_09">
+														<label for="mexkind01_09" class="chkrd_lab">기타</label>
+													</div>
+												</div>
+												<div class="res_incell res_inlong"><input type="text" class="form_input"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- // 탄소&middot;나노 소재 분류  -->
+							<!-- 기능성  -->
+							<div class="mdbox_tabcont" id="mdbox_tabcont02">
+								<div class="mdep_vlist_w">
+									<ul class="mdep_vlist">
+										<li>
+											<div class="mdep_twolow">
+												<ul class="mdep_twovlist">
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_01_two01" checked>
+															<label for="mexkind02_01_two01" class="chkrd_lab">방열</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_01_two02">
+															<label for="mexkind02_01_two02" class="chkrd_lab">정전기 방지</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_01_two03">
+															<label for="mexkind02_01_two03" class="chkrd_lab">차열/내화/불연</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_01_two04">
+															<label for="mexkind02_01_two04" class="chkrd_lab">고기능 융복합</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_twolow">
+												<ul class="mdep_twovlist">
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_02_two01" checked>
+															<label for="mexkind02_02_two01" class="chkrd_lab">방열</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_02_two02">
+															<label for="mexkind02_02_two02" class="chkrd_lab">고강도/경량화</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_02_two03">
+															<label for="mexkind02_02_two03" class="chkrd_lab">항균</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_02_two04">
+															<label for="mexkind02_02_two04" class="chkrd_lab">기타</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_twolow">
+												<ul class="mdep_twovlist">
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_03_two01" checked>
+															<label for="mexkind02_03_two01" class="chkrd_lab">전자파차폐</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_03_two02">
+															<label for="mexkind02_03_two02" class="chkrd_lab">단열/IR·UV차단</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind02_03_two03">
+															<label for="mexkind02_03_two03" class="chkrd_lab">친수/발수</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- // 기능성  -->
+							<!-- 관련 적용/응용 산업  -->
+							<div class="mdbox_tabcont" id="mdbox_tabcont03">
+								<div class="mdep_vlist_w">
+									<ul class="mdep_vlist">
+										<li>
+											<div class="mdep_twolow">
+												<ul class="mdep_twovlist">
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_01_two01" checked>
+															<label for="mexkind03_01_two01" class="chkrd_lab">자동차</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_01_two02">
+															<label for="mexkind03_01_two02" class="chkrd_lab">항공</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_01_two03">
+															<label for="mexkind03_01_two03" class="chkrd_lab">철도</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_01_two04">
+															<label for="mexkind03_01_two04" class="chkrd_lab">환경필터</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_01_two05">
+															<label for="mexkind03_01_two05" class="chkrd_lab">디스플레이</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_01_two06">
+															<label for="mexkind03_01_two06" class="chkrd_lab">방위</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_01_two07">
+															<label for="mexkind03_01_two07" class="chkrd_lab">센서</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_twolow">
+												<ul class="mdep_twovlist">
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_02_two01" checked>
+															<label for="mexkind03_02_two01" class="chkrd_lab">선박</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_02_two02">
+															<label for="mexkind03_02_two02" class="chkrd_lab">기타 모빌리티(UAM, 드론 등)</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_02_two03">
+															<label for="mexkind03_02_two03" class="chkrd_lab">수소저장용기</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_02_two04">
+															<label for="mexkind03_02_two04" class="chkrd_lab">제철/제강</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_02_two05">
+															<label for="mexkind03_02_two05" class="chkrd_lab">전자부품</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_02_two06">
+															<label for="mexkind03_02_two06" class="chkrd_lab">우주</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_02_two07">
+															<label for="mexkind03_02_two07" class="chkrd_lab">기타</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="mdep_twolow">
+												<ul class="mdep_twovlist">
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_03_two01" checked>
+															<label for="mexkind03_03_two01" class="chkrd_lab">이차전지</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_03_two02">
+															<label for="mexkind03_03_two02" class="chkrd_lab">연료전지</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_03_two03">
+															<label for="mexkind03_03_two03" class="chkrd_lab">신재생에너지(풍력, 태양광)</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_03_two04">
+															<label for="mexkind03_03_two04" class="chkrd_lab">의료기기</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_03_two05">
+															<label for="mexkind03_03_two05" class="chkrd_lab">레져·스포츠</label>
+														</div>
+													</li>
+													<li>
+														<div class="chkrd_item breaktype">
+															<input type="checkbox" class="chkrd" id="mexkind03_03_two06">
+															<label for="mexkind03_03_two06" class="chkrd_lab">건설/건자재</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- // 관련 적용/응용 산업  -->
+							<!-- 본인의 전문분야 -->
+							<div class="mdbox_tabcont" id="mdbox_tabcont04">
+								<div class="res_fktb_w">
+									<div class="res_fktb">
+										<div class="res_fktr">
+											<div class="res_fkcell res_fkth"><span class="res_fkwpsp">R&amp;D</span></div>
+											<div class="res_fkcell res_fktd">
+												<!-- 211123 수정 -->
+												<div class="res_fkinlow">
+													<ul class="rdchk_vtlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindrd_01_01">
+																<label for="exkindrd_01_01" class="chkrd_lab">연구실행계획 및 선도방향 수립</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindrd_01_02">
+																<label for="exkindrd_01_02" class="chkrd_lab">연구개발</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindrd_01_03">
+																<label for="exkindrd_01_03" class="chkrd_lab">전문기술이전 및 지도</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindrd_02_01">
+																<label for="exkindrd_02_01" class="chkrd_lab">R&D기획 (아이템 발굴, 타당성 조사 등)</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindrd_02_02">
+																<label for="exkindrd_02_02" class="chkrd_lab">기존제품/서비스개선</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindrd_02_03">
+																<label for="exkindrd_02_03" class="chkrd_lab">기술가치평가</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- // 211123 수정 -->
+											</div>
+										</div>
+										<div class="res_fktr">
+											<div class="res_fkcell res_fkth"><span class="res_fkwpsp">제품생산<br>(설비)</span></div>
+											<div class="res_fkcell res_fktd">
+												<!-- 211123 수정 -->
+												<div class="res_fkinlow">
+													<ul class="rdchk_vtlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindpro_01_01">
+																<label for="exkindpro_01_01" class="chkrd_lab">설비구축 및 실증 연구</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindpro_01_01">
+																<label for="exkindpro_01_01" class="chkrd_lab">신공정개발 및 기존 공정개선</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindpro_02_01">
+																<label for="exkindpro_02_01" class="chkrd_lab">Pilot Scale up 연구</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindpro_02_01">
+																<label for="exkindpro_02_01" class="chkrd_lab">장비사용지원</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- // 211123 수정 -->
+											</div>
+										</div>
+										<div class="res_fktr">
+											<div class="res_fkcell res_fkth"><span class="res_fkwpsp">사업화</span></div>
+											<div class="res_fkcell res_fktd">
+												<!-- 211123 수정 -->
+												<div class="res_fkinlow">
+													<ul class="rdchk_vtlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindbiz_01_01">
+																<label for="exkindbiz_01_01" class="chkrd_lab">신제품/서비스개발 기획</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindbiz_01_02">
+																<label for="exkindbiz_01_02" class="chkrd_lab">지식재산권 확보</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindbiz_02_01">
+																<label for="exkindbiz_02_01" class="chkrd_lab">마케팅/홍보</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindbiz_02_02">
+																<label for="exkindbiz_02_02" class="chkrd_lab">투자유치 및 심사 지원</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- // 211123 수정 -->
+											</div>
+										</div>
+										<div class="res_fktr">
+											<div class="res_fkcell res_fkth"><span class="res_fkwpsp">시제품<br>제작</span></div>
+											<div class="res_fkcell res_fktd">
+												<!-- 211123 수정 -->
+												<div class="res_fkinlow">
+													<ul class="rdchk_vtlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindstart_01_01">
+																<label for="exkindstart_01_01" class="chkrd_lab">기술수요기반 시제품 제작</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindstart_02_01">
+																<label for="exkindstart_02_01" class="chkrd_lab">시제품 개발에 따른 양산 및 실증</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- // 211123 수정 -->
+											</div>
+										</div>
+										<div class="res_fktr">
+											<div class="res_fkcell res_fkth"><span class="res_fkwpsp">성능평가</span></div>
+											<div class="res_fkcell res_fktd">
+												<!-- 211123 수정 -->
+												<div class="res_fkinlow">
+													<ul class="rdchk_vtlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindper_01_01">
+																<label for="exkindper_01_01" class="chkrd_lab">시험평가/분석</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindper_01_02">
+																<label for="exkindper_01_02" class="chkrd_lab">안전성 평가</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindper_02_01">
+																<label for="exkindper_02_01" class="chkrd_lab">인증지원</label>
+															</div>
+														</li>
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exkindper_02_02">
+																<label for="exkindper_02_02" class="chkrd_lab">신뢰성 평가</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="res_fktr">
+											<div class="res_fkcell res_fkth"><span class="res_fkwpsp">정책</span></div>
+											<div class="res_fkcell res_fktd">
+												<!-- 211123 수정 -->
+												<div class="res_fkinlow">
+													<ul class="rdchk_vtlist">
+														<li>
+															<div class="chkrd_item breaktype">
+																<input type="checkbox" class="chkrd" id="exrule_01">
+																<label for="exrule_01" class="chkrd_lab">지역경제, 산업정책</label>
+															</div>
+														</li>
+														<li>
+															<div class="res_intb">
+																<div class="res_incell res_inshort">
+																	<div class="chkrd_item breaktype">
+																		<input type="checkbox" class="chkrd" id="exrule_02">
+																		<label for="exrule_02" class="chkrd_lab">기타</label>
+																	</div>
+																</div>
+																<div class="res_incell res_inlong"><input type="text" class="form_input"></div>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- // 211123 수정 -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- // 본인의 전문분야 -->
+						</div>
+					</div>
+					<div class="btn_midsm_w">
+						<a href="#" class="btn_midsm type2 define_sm">이전</a>
+						<a href="#" class="btn_midsm define_big">저장하고 다음</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_zone">
+            <div class="footer_in">
+                <div class="footer_incell">
+                    <p class="footer_copy">COPYRIGHT(c)2012 KCANIACN. ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>

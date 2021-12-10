@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <script src="./js/main.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body type2">
+	<div class="page_wrap main_wrap">
+		<!-- header -->
+        <header class="header_zone type2">
+            <a href="javascript:;" class="btn_htotal"><span class="htotal_in"><span class="hdtext">메뉴</span></span></a>
+            <div class="header_top_group">
+                <div class="header_top_group_in">
+                    <div class="hdpin_left">
+                        <ul class="hutil_hlist">
+                            <li><a href="#" class="hutil has_ico ico_mike"><span class="hutil_text">전문가등록</span></a></li>
+                            <li><a href="#" class="hutil"><span class="hutil_text">마이페이지</span></a></li>
+                            <li><a href="#" class="hutil"><span class="hutil_text">고객센터</span></a></li>
+                        </ul>
+                    </div>
+                    <h1 class="hdp_logo"><a href="#" class="hdp_logo_link"><span class="hdtext">KCANIA</span></a></h1>
+                    <div class="hdpin_right">
+                        <ul class="hutil_hlist">
+                            <li><a href="#" class="hutil_box"><span class="hutil_box_in">로그인</span></a></li>
+                            <li><a href="#" class="hutil has_ico ico_men"><span class="hutil_text">회원가입</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_gnb_group">
+                <div class="header_gnb_fxwrap">
+                    <div class="hgnb_define_grow">
+                        <ul class="hgnb_hlist">
+                            <li>
+								<a href="#" class="hgnbitem"><span class="hgnbitem_insp">서비스 소개</span></a>
+								<div class="hgnbtwo_vlist_w">
+									<ul class="hgnbtwo_vlist">
+										<li><a href="#" class="hgnbtwo">사업소개</a></li>
+										<li><a href="#" class="hgnbtwo">플랫폼소개</a></li>
+										<li><a href="#" class="hgnbtwo">연락처/찾아오는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="hgnbitem"><span class="hgnbitem_insp">탄소·나노 기술 제품 show</span></a>
+								<div class="hgnbtwo_vlist_w">
+									<ul class="hgnbtwo_vlist">
+										<li><a href="#" class="hgnbtwo">기업정보</a></li>
+										<li><a href="#" class="hgnbtwo">기술정보</a></li>
+										<li><a href="#" class="hgnbtwo">제품정보</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="hgnbitem"><span class="hgnbitem_insp">탄소·나노제품 및 개발 문의</span></a>
+								<div class="hgnbtwo_vlist_w">
+									<ul class="hgnbtwo_vlist">
+										<li><a href="#" class="hgnbtwo">제품 문의 및 개발 문의</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="hgnbitem"><span class="hgnbitem_insp">탄소/나노 정보</span></a>
+								<div class="hgnbtwo_vlist_w">
+									<ul class="hgnbtwo_vlist">
+                                        <li><a href="#" class="hgnbtwo">통계자료</a></li>
+                                        <li><a href="#" class="hgnbtwo">장비정보</a></li>
+                                        <li><a href="#" class="hgnbtwo">기관/보고서</a></li>
+                                        <li><a href="#" class="hgnbtwo">관련기관정보</a></li>
+                                        <li><a href="#" class="hgnbtwo">특허정보</a></li>
+                                        <li><a href="#" class="hgnbtwo">외부공고/채용</a></li>
+                                        <li><a href="#" class="hgnbtwo">탄소나노 기업소식</a></li>
+									</ul>
+								</div>
+							</li>
+                        </ul>
+                    </div>
+                    <div class="hgnb_define_shrink">
+                        <ul class="hgnbelse_hlist">
+                            <li><a href="#" class="hge hge_search"><span class="hdtext">검색</span></a></li>
+                            <li>
+								<a href="#" class="hge hge_total"><span class="hge_in"><span class="hdtext">메뉴 열기</span></span></a>
+								<a href="#" class="hge hge_total_close"><span class="hdtext">메뉴 닫기</span></a>
+							</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_pctotal_w">
+				<div class="header_pctotal_in">
+                    <div class="hpct_vitem_fxwrap">
+                        <div class="hpct_vitem">
+                            <ul class="hpct_vlist">
+                                <li><a href="#" class="hpct_menu">사업소개</a></li>
+                                <li><a href="#" class="hpct_menu">플랫폼소개</a></li>
+                                <li><a href="#" class="hpct_menu">연락처/찾아오는길</a></li>
+                            </ul>
+                        </div>
+                        <div class="hpct_vitem">
+                            <ul class="hpct_vlist">
+                                <li><a href="#" class="hpct_menu">기업정보</a></li>
+                                <li><a href="#" class="hpct_menu">기술정보</a></li>
+                                <li><a href="#" class="hpct_menu">제품정보</a></li>
+                            </ul>
+                        </div>
+                        <div class="hpct_vitem">
+                            <ul class="hpct_vlist">
+                                <li><a href="#" class="hpct_menu">제품 문의 및 개발 문의</a></li>
+                            </ul>
+                        </div>
+                        <div class="hpct_vitem">
+                            <ul class="hpct_vlist">
+                                <li><a href="#" class="hpct_menu">통계자료</a></li>
+                                <li><a href="#" class="hpct_menu">장비정보</a></li>
+                                <li><a href="#" class="hpct_menu">기관/보고서</a></li>
+                                <li><a href="#" class="hpct_menu">관련기관정보</a></li>
+                                <li><a href="#" class="hpct_menu">특허정보</a></li>
+                                <li><a href="#" class="hpct_menu">외부공고/채용</a></li>
+                                <li><a href="#" class="hpct_menu">탄소나노 기업소식</a></li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+			</div>
+            <a href="javascript:;" class="btn_hsearch"><span class="hdtext">검색</span></a>
+        </header>
+        <!-- // header -->
+        <!-- 모바일메뉴 -->
+        <div class="mbtotal_zw">
+            <div class="mbtotal_bg"></div>
+            <div class="mbtotal_w">
+                <div class="mbtotal_isc">
+                    <div class="mdtotal_low01">
+                        <div class="mdt_cintb">
+                            <div class="mdt_cintd mdt_cleft"><img src="./images/pinlogo.png" class="mdt_logo" alt="KCANIA"></div>
+                        </div>
+                    </div>
+                    <div class="mdtotal_low02">
+                        <p class="mdtlog_ment">로그인 후 서비스 이용이 가능합니다.</p>
+                        <div class="btn_mdtlog_tb_w">
+                            <div class="btn_mdtlog_tb">
+                                <a href="javascript:;" class="btn_mdtlog_td">로그인</a>
+                                <a href="javascript:;" class="btn_mdtlog_td">간편가입하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdtotal_low02">
+                        <p class="mdtlog_ment type2">(회원아이디)님 반갑습니다.</p>
+                        <div class="btn_mdtlog_tb_w">
+                            <div class="btn_mdtlog_tb">
+                                <a href="javascript:;" class="btn_mdtlog_td">마이페이지</a>
+                                <a href="javascript:;" class="btn_mdtlog_td">로그아웃</a>
+                            </div>
+                        </div>
+                        <div class="btn_mdtlog_tb_w">
+                            <div class="btn_mdtlog_tb">
+                                <a href="javascript:;" class="btn_mdtlog_td has_ico"><i class="mike_ico"></i>전문가 등록</a>
+                                <a href="javascript:;" class="btn_mdtlog_td">고객센터</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdtotal_low03">
+                        <div class="mdtotal_gnblist_w">
+                            <ul class="mdtotal_gnblist">
+                                <li id="info_mbmenu01">
+                                    <a href="#" class="mdtgm">서비스 소개</a>
+                                    <div class="mdtdep_vlist_w">
+                                        <ul class="mdtdep2_vlist">
+                                            <li id="info_mbmenu01_01"><a href="#" class="mdtdep2">사업소개</a></li>
+                                            <li id="info_mbmenu01_02"><a href="#" class="mdtdep2">플랫폼소개</a></li>
+                                            <li id="info_mbmenu01_03"><a href="#" class="mdtdep2">연락처/찾아오는길</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="mdtgm">탄소·나노 기술 제품 show</a>
+                                    <div class="mdtdep_vlist_w">
+                                        <ul class="mdtdep2_vlist">
+                                            <li id="pro_mbmenu01_01"><a href="#" class="mdtdep2">기업정보</a></li>
+                                            <li id="pro_mbmenu01_02"><a href="#" class="mdtdep2">기술정보</a></li>
+                                            <li id="pro_mbmenu01_03"><a href="#" class="mdtdep2">제품정보</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="mdtgm">탄소·나노제품 및 개발 문의</a>
+                                    <div class="mdtdep_vlist_w">
+										<ul class="mdtdep2_vlist">
+                                            <li id="inq_mbmenu01_01"><a href="#" class="mdtdep2">제품 문의 및 개발 문의</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="mdtgm">탄소/나노 정보</a>
+                                    <div class="mdtdep_vlist_w">
+										<ul class="mdtdep2_vlist">
+                                            <li id="data_mbmenu01_01"><a href="#" class="mdtdep2">통계자료</a></li>
+                                            <li id="data_mbmenu01_02"><a href="#" class="mdtdep2">장비정보</a></li>
+                                            <li id="data_mbmenu01_03"><a href="#" class="mdtdep2">기관/보고서</a></li>
+                                            <li id="data_mbmenu01_04"><a href="#" class="mdtdep2">관련기관정보</a></li>
+                                            <li id="data_mbmenu01_05"><a href="#" class="mdtdep2">특허정보</a></li>
+                                            <li id="data_mbmenu01_06"><a href="#" class="mdtdep2"> 외부공고/채용</a></li>
+                                            <li id="data_mbmenu01_07"><a href="#" class="mdtdep2">탄소나노 기업소식</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="mdtgm">MY KCANIA</a>
+                                    <div class="mdtdep_vlist_w">
+										<ul class="mdtdep_vlist">
+											<li id="my_mbmenu01">
+												<a href="#" class="mdtdep">MY 관심</a>
+												<div class="mdtdep2_vlist_w">
+													<ul class="mdtdep2_vlist">
+														<li id="my_mbmenu01_01"><a href="#" class="mdtdep2">기업정보</a></li>
+														<li id="my_mbmenu01_02"><a href="#" class="mdtdep2">제품정보</a></li>
+														<li id="my_mbmenu01_03"><a href="#" class="mdtdep2">기술정보</a></li>
+													</ul>
+												</div>
+											</li>
+											<li id="my_mbmenu02">
+												<a href="#" class="mdtdep">MY 활동</a>
+												<div class="mdtdep2_vlist_w">
+													<ul class="mdtdep2_vlist">
+														<li id="my_mbmenu02_01"><a href="#" class="mdtdep2">1 : 1 문의</a></li>
+														<li id="my_mbmenu02_02"><a href="#" class="mdtdep2">제품 및 개발의뢰</a></li>
+													</ul>
+												</div>
+											</li>
+											<li id="my_mbmenu03">
+												<a href="#" class="mdtdep">MY 정보</a>
+												<div class="mdtdep2_vlist_w">
+													<ul class="mdtdep2_vlist">
+														<li id="my_mbmenu03_01"><a href="#" class="mdtdep2">회원 정보 수정</a></li>
+														<li id="my_mbmenu03_02"><a href="#" class="mdtdep2">전문가 프로필 수정</a></li>
+														<li id="my_mbmenu03_03"><a href="#" class="mdtdep2">회원탈퇴</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="btn_mdtotal_close"><span class="hdtext">전체메뉴 닫기</span></a>
+            </div>
+        </div>
+        <!-- // 모바일메뉴 -->
+		<section class="main_contents">
+			<!-- main_visual_low -->
+			<div class="main_visual_low">
+				<div class="mvcont_w">
+					<div class="mvcont_copy_w">
+						<p class="mvcont_copy01">탄소 &middot; 나노 융합 정보 플랫폼 서비스</p>
+						<p class="mvcont_copy02">KOREA CABON AND NANO INDUSTRY ASSOCIATION</p>
+					</div>
+					<div class="mvdia_item_fxwrap">
+						<!-- 211210 수정 -->
+						<a href="#" class="mvdia_item">
+							<p class="mvdia_copy01">기술/제품</p>
+							<p class="mvdia_copy02">show</p>
+						</a>
+						<a href="#" class="mvdia_item dtype2">
+							<p class="mvdia_copy01">제품/개발</p>
+							<p class="mvdia_copy02">Inquiry</p>
+						</a>
+						<a href="#" class="mvdia_item dtype3">
+							<p class="mvdia_copy01">탄소/나노</p>
+							<p class="mvdia_copy02">Information</p>
+						</a>
+						<!-- // 211210 수정 -->
+					</div>
+				</div>
+			</div>
+			<!-- // main_visual_low -->
+			<!-- main_contents_low -->
+			<div class="main_contents_low">
+				<div class="mc_vitem_w">
+					<!-- 전문가 추천 -->
+					<div class="mc_vitem">
+						<div class="mc_vtitlow">
+							<p class="mc_vtit">전문가 추천</p>
+						</div>
+						<div class="mc_vcontlow" id="exrecom_swiper_zone">
+							<div class="btn_flowcontrol_w flow_left"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">이전</span></a></div>
+							<div class="mc_flowline"></div>
+							<div class="swiper-container exrecom_swiper">
+								<div class="swiper-wrapper">
+									<!-- exrecom_slide -->
+									<div class="swiper-slide exrecom_slide">
+										<div class="exrecom_item">
+											<div class="exrecom_thum" style="background-image:url(./images/main/temp_176x176.png)"></div>
+											<div class="exrecom_spec">
+												<div class="exrecom_decocir"></div>
+												<div class="exrecom_men">김동희님</div>
+												<div class="exrecom_work">국가연구자정보시스템</div>
+											</div>
+										</div>
+									</div>
+									<!-- // exrecom_slide -->
+									<!-- exrecom_slide -->
+									<div class="swiper-slide exrecom_slide">
+										<div class="exrecom_item">
+											<div class="exrecom_thum"></div>
+											<div class="exrecom_spec">
+												<div class="exrecom_decocir"></div>
+												<div class="exrecom_men">김태희님</div>
+												<div class="exrecom_work">시스템반도체 융합얼라이언스</div>
+											</div>
+										</div>
+									</div>
+									<!-- // exrecom_slide -->
+									<!-- exrecom_slide -->
+									<div class="swiper-slide exrecom_slide">
+										<div class="exrecom_item">
+											<div class="exrecom_thum" style="background-image:url(./images/main/temp_176x176_3.png)"></div>
+											<div class="exrecom_spec">
+												<div class="exrecom_decocir"></div>
+												<div class="exrecom_men">홍길님</div>
+												<div class="exrecom_work">국가연구자정보시스템</div>
+											</div>
+										</div>
+									</div>
+									<!-- // exrecom_slide -->
+									<!-- exrecom_slide -->
+									<div class="swiper-slide exrecom_slide">
+										<div class="exrecom_item">
+											<div class="exrecom_thum" style="background-image:url(./images/main/temp_176x176.png)"></div>
+											<div class="exrecom_spec">
+												<div class="exrecom_decocir"></div>
+												<div class="exrecom_men">윤남희님</div>
+												<div class="exrecom_work">R&BD PLATFORM</div>
+											</div>
+										</div>
+									</div>
+									<!-- // exrecom_slide -->
+									<!-- exrecom_slide -->
+									<div class="swiper-slide exrecom_slide">
+										<div class="exrecom_item">
+											<div class="exrecom_thum" style="background-image:url(./images/main/temp_176x176_2.png)"></div>
+											<div class="exrecom_spec">
+												<div class="exrecom_decocir"></div>
+												<div class="exrecom_men">장진희님</div>
+												<div class="exrecom_work">나노융합 협회</div>
+											</div>
+										</div>
+									</div>
+									<!-- // exrecom_slide -->
+									<!-- exrecom_slide -->
+									<div class="swiper-slide exrecom_slide">
+										<div class="exrecom_item">
+											<div class="exrecom_thum" style="background-image:url(./images/main/temp_176x176_2.png)"></div>
+											<div class="exrecom_spec">
+												<div class="exrecom_decocir"></div>
+												<div class="exrecom_men">장진희님</div>
+												<div class="exrecom_work">나노융합 협회</div>
+											</div>
+										</div>
+									</div>
+									<!-- // exrecom_slide -->
+								</div>
+							</div>
+							<!-- 내용이 없을 경우 -->
+								<div class="mc_vnodata">데이터가 없습니다.</div>
+							<!-- // 내용이 없을 경우 -->
+							<div class="btn_flowcontrol_w flow_right"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">다음</span></a></div>
+						</div>
+						<a href="#" class="btn_mcvmore"><span class="hdtext">전문가 추천 더보기</span></a>
+					</div>
+					<!-- // 전문가 추천 -->
+					<!-- 전문가 등록 -->
+					<div class="mc_vitem has_mcregis">
+						<div class="mcregis_hbox">
+							<div class="mcregis_fxwrap">
+								<div class="mcregis_fgrow">
+									<div class="mcregis_label"><span class="mcregis_label_intext">전문가 등록</span></div>
+									<div class="mcregis_label_sub">탄소나노협회 전문가 위촉 위원 등록(기획/평가/자문 등)</div>
+								</div>
+								<div class="mcregis_fshrink">
+									<a href="#" class="btn_mcregis"><span class="mcregis_in">전문가 등록하기</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // 전문가 등록 -->
+					<!-- 기업/제품 추천 -->
+					<div class="mc_vitem has_both">
+						<div class="mc_hitem_fxwrap">
+							<!-- 기업 -->
+							<div class="mc_hitem">
+								<div class="mc_vtitlow">
+									<p class="mc_vtit">기업 추천</p>
+								</div>
+								<div class="mc_vcontlow" id="exrecom_sm01">
+									<div class="btn_flowcontrol_w flow_left"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">이전</span></a></div>
+									<div class="swiper-container exrecom_sm_swiper">
+										<div class="swiper-wrapper">
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160.png)"></div>
+														<span class="exrecom_num">1</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_2.png)"></div>
+														<span class="exrecom_num type2">2</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_3.png)"></div>
+														<span class="exrecom_num type2">3</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160.png)"></div>
+														<span class="exrecom_num">1</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_2.png)"></div>
+														<span class="exrecom_num type2">2</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_3.png)"></div>
+														<span class="exrecom_num type2">3</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+										</div>
+									</div>
+									<!-- 내용이 없을 경우 -->
+									<div class="mc_vnodata">데이터가 없습니다.</div>
+									<!-- // 내용이 없을 경우 -->
+									<div class="btn_flowcontrol_w flow_right"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">다음</span></a></div>
+								</div>
+								<a href="#" class="btn_mcvmore"><span class="hdtext">기업 추천 더보기</span></a>
+							</div>
+							<!-- // 기업 -->
+							<!-- 제품 -->
+							<div class="mc_hitem">
+								<div class="mc_vtitlow">
+									<p class="mc_vtit">제품 추천</p>
+								</div>
+								<div class="mc_vcontlow" id="exrecom_sm02">
+									<div class="btn_flowcontrol_w flow_left"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">이전</span></a></div>
+									<div class="swiper-container exrecom_sm_swiper">
+										<div class="swiper-wrapper">
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160.png)"></div>
+														<span class="exrecom_num">1</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_2.png)"></div>
+														<span class="exrecom_num type2">2</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_3.png)"></div>
+														<span class="exrecom_num type2">3</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160.png)"></div>
+														<span class="exrecom_num">1</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_2.png)"></div>
+														<span class="exrecom_num type2">2</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+											<!-- exrecom_slide -->
+											<div class="swiper-slide exrecom_sm_slide">
+												<div class="exrecom_sm_item">
+													<div class="exrecom_sm_thum_w">
+														<div class="exrecom_thum" style="background-image:url(./images/main/temp_160x160_3.png)"></div>
+														<span class="exrecom_num type2">3</span>
+													</div>
+													<div class="exrecom_sm_spec">
+														<div class="exrecom_name">국가연구자정보시스템</div>
+													</div>
+												</div>
+											</div>
+											<!-- // exrecom_slide -->
+										</div>
+									</div>
+									<!-- 내용이 없을 경우 -->
+									<div class="mc_vnodata">데이터가 없습니다.</div>
+									<!-- // 내용이 없을 경우 -->
+									<div class="btn_flowcontrol_w flow_right"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">다음</span></a></div>
+								</div>
+								<a href="#" class="btn_mcvmore"><span class="hdtext">제품 추천 더보기</span></a>
+							</div>
+							<!-- // 제품 -->
+						</div>
+					</div>
+					<!-- // 기업/제품 추천 -->
+					<!-- 탄소/나노 통계 -->
+					<div class="mc_vitem has_chart">
+						<div class="mc_vtitlow">
+							<p class="mc_vtit">탄소/나노 통계</p>
+						</div>
+						<div class="mc_vcontlow has_chart">
+							<div class="mc_chartfxwrap">
+								<div class="mc_chartcell">
+									<div class="mc_chartcbox">탄소 통계</div>
+								</div>
+								<div class="mc_chartcell">
+									<div class="mc_chartcbox">나노 통계</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn_mcvmore"><span class="hdtext">탄소/나노 통계 더보기</span></a>
+					</div>
+					<!-- // 탄소/나노 통계 -->
+				</div>
+				<div class="mc_full_item_w">
+					<div class="mcfull_item">
+						<div class="mcfull_titlow">
+							<p class="mcfull_tit">사업공고/뉴스</p>
+						</div>
+						<div class="mcfull_contlow">
+							<div class="mcfull_wbox_w">
+								<!-- 사업공고 -->
+								<div class="mcfull_wbox">
+									<div class="mcfull_stitlow">
+										<p class="mcfull_stit">사업공고</p>
+									</div>
+									<div class="mcfull_incontlow ptype2">
+										<div class="mcbizlk_list_w">
+											<ul class="mcbizlk_list">
+												<li>
+													<a href="#" class="mcbizlk_item">
+														<div class="biz_layer">
+															<div class="biz_lbox">
+																<span class="biz_lbkey">OCT</span>
+																<span class="biz_lbvalue">05</span>
+															</div>
+														</div>
+														<div class="mcbizlk_img" style="background-image:url(./images/main/temp_245x145.png)"></div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="mcbizlk_item">
+														<div class="biz_layer">
+															<div class="biz_lbox">
+																<span class="biz_lbkey">OCT</span>
+																<span class="biz_lbvalue">05</span>
+															</div>
+														</div>
+														<div class="mcbizlk_img" style="background-image:url(./images/main/temp_245x145_2.png)"></div>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<!-- 내용이 없을때 -->
+										<div class="mcftab_nodata_w">
+											<p class="mcftab_nodata">데이터가 없습니다.</p>
+										</div>
+										<!-- // 내용이 없을때 -->
+									</div>
+									<a href="#" class="btn_mcfullmore"><span class="hdtext">사업공고 더보기</span></a>
+								</div>
+								<!-- // 사업공고 -->
+								<!-- 공지사항/뉴스 -->
+								<div class="mcfull_wbox">
+									<div class="mcftab_w">
+										<a href="#mcfcont01" class="mcftab active"><span class="mcftab_in">공지사항</span></a>
+										<a href="#mcfcont02" class="mcftab"><span class="mcftab_in">뉴스</span></a>
+									</div>
+									<div class="mcfull_incontlow mcftab_cont_w">
+										<div class="mcftab_cont" id="mcfcont01" style="display:block;">
+											<div class="mcflk_vlist_w">
+												<ul class="mcflk_vlist">
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- 내용이 없을때 -->
+											<div class="mcftab_nodata_w">
+												<p class="mcftab_nodata">데이터가 없습니다.</p>
+											</div>
+											<!-- // 내용이 없을때 -->
+											<a href="#" class="btn_mcfullmore"><span class="hdtext">공지사항 더보기</span></a>
+										</div>
+										<div class="mcftab_cont" id="mcfcont02">
+											<div class="mcflk_vlist_w type2">
+												<ul class="mcflk_vlist">
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지]2 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+													<li>
+														<div class="mcflk_efxwrap">
+															<a href="#" class="mcflk_link">[공지] 뉴스 2020년 T2B사업 신규 기업모집 안내</a>
+															<p class="mcflk_else">2022.02.30</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- 내용이 없을때 -->
+											<div class="mcftab_nodata_w">
+												<p class="mcftab_nodata">데이터가 없습니다.</p>
+											</div>
+											<!-- // 내용이 없을때 -->
+											<a href="#" class="btn_mcfullmore"><span class="hdtext">뉴스 더보기</span></a>
+										</div>
+									</div>
+								</div>
+								<!-- // 공지사항/뉴스 -->
+							</div>
+						</div>
+					</div>
+					<div class="mcfull_item type2" id="mcgallery_zone">
+						<div class="mcfull_intitlow"><p class="mcfull_intit">갤러리</p></div>
+						<div class="mcfull_incontlow">
+							<div class="btn_flowcontrol_w flow_left"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">이전</span></a></div>
+							<div class="swiper-container mcgallery_swiper">
+								<div class="swiper-wrapper">
+									<!-- mcgallery_slide -->
+									<div class="swiper-slide mcgallery_slide">
+										<a href="#" class="mcgallery_item">
+											<div class="mcgallery_thum" style="background-image:url(./images/main/temp_280x160.png)"></div>
+											<div class="mcgallery_spec">
+												<div class="mcgallery_e">갤러리 이미지 설명</div>
+											</div>
+										</a>
+									</div>
+									<!-- // mcgallery_slide -->
+									<!-- mcgallery_slide -->
+									<div class="swiper-slide mcgallery_slide">
+										<a href="#" class="mcgallery_item">
+											<div class="mcgallery_thum" style="background-image:url(./images/main/temp_280x160_2.png)"></div>
+											<div class="mcgallery_spec">
+												<div class="mcgallery_e">갤러리 이미지 설명</div>
+											</div>
+										</a>
+									</div>
+									<!-- // mcgallery_slide -->
+									<!-- mcgallery_slide -->
+									<div class="swiper-slide mcgallery_slide">
+										<a href="#" class="mcgallery_item">
+											<div class="mcgallery_thum" style="background-image:url(./images/main/temp_280x160.png)"></div>
+											<div class="mcgallery_spec">
+												<div class="mcgallery_e">갤러리 이미지 설명</div>
+											</div>
+										</a>
+									</div>
+									<!-- // mcgallery_slide -->
+									<!-- mcgallery_slide -->
+									<div class="swiper-slide mcgallery_slide">
+										<a href="#" class="mcgallery_item">
+											<div class="mcgallery_thum" style="background-image:url(./images/main/temp_280x160_2.png)"></div>
+											<div class="mcgallery_spec">
+												<div class="mcgallery_e">갤러리 이미지 설명</div>
+											</div>
+										</a>
+									</div>
+									<!-- // mcgallery_slide -->
+									<!-- mcgallery_slide -->
+									<div class="swiper-slide mcgallery_slide">
+										<a href="#" class="mcgallery_item">
+											<div class="mcgallery_thum" style="background-image:url(./images/main/temp_280x160.png)"></div>
+											<div class="mcgallery_spec">
+												<div class="mcgallery_e">갤러리 이미지 설명</div>
+											</div>
+										</a>
+									</div>
+									<!-- // mcgallery_slide -->
+									<!-- mcgallery_slide -->
+									<div class="swiper-slide mcgallery_slide">
+										<a href="#" class="mcgallery_item">
+											<div class="mcgallery_thum" style="background-image:url(./images/main/temp_280x160_2.png)"></div>
+											<div class="mcgallery_spec">
+												<div class="mcgallery_e">갤러리 이미지 설명</div>
+											</div>
+										</a>
+									</div>
+									<!-- // mcgallery_slide -->
+								</div>
+							</div>
+							<div class="mcfull_nodata_w">
+								<p class="mcfull_nodata">데이터가 없습니다.</p>
+							</div>
+							<div class="btn_flowcontrol_w flow_right"><a href="javascript:;" class="btn_flowcontrol"><span class="hdtext">다음</span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // main_contents_low -->
+		</section>
+		<footer class="footer_zone type2">
+            <div class="footer_pin">
+                <div class="foot_fxwrap">
+                    <div class="foot_shrink"><span class="foot_botlogo"><span class="hdtext">한국탄소나노산업협회 KOREA CARBON AND NANO INDUSTRY ASSOCIATION</span></span></div>
+                    <div class="foot_grow">
+                        <div class="fbotmenu_hlist_w">
+                            <ul class="fbotmenu_hlist">
+                                <li><a href="#" class="fbotmenu">KCANIA소개</a></li>
+                                <li><a href="#" class="fbotmenu">이용약관</a></li>
+                                <li><a href="#" class="fbotmenu">개인정보처리방침</a></li>
+                                <li><a href="#" class="fbotmenu">고객센터</a></li>
+                            </ul>
+                        </div>
+                        <div class="fbotcopy_w">
+                            <address class="fbot_address">(06792)서울시 강남구 선릉로 13  사업자등록번호 : 100-82-12345  TEL : 1234-5678</address>
+                            <p class="fbot_copy">COPYRIGHT(c)2012 KCANIACN. ALL RIGHTS RESERVED 한국탄소나노산업협회</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="btn_topgo"><span class="hdtext">상단으로 이동</span></a>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>

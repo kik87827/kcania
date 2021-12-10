@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- layer -->
+		<div class="dimlayer_z" id="layer_account_search">
+			<div class="dimbg"></div>
+			<div class="dimlayer_tb">
+				<div class="dimlayer_td">
+					<div class="layer_box">
+						<div class="layer_titlow"><h2 class="layer_tit">계정정보 찾기</h2></div>
+						<div class="layer_cont has_searchform">
+							<!-- tab -->
+							<div class="tab_item_hlist d_tabui" data-tabcont="#tab_searchcont">
+								<a href="#tab_cont01" class="tab_item active"><span class="tab_item_text">아이디 (이메일)<br class="mb_br">찾기</span></a>
+								<a href="#tab_cont02" class="tab_item"><span class="tab_item_text">비밀번호 <br class="mb_br">찾기</span></a>
+							</div>
+							<!-- tab -->
+							<!-- tab contents -->
+							<div class="tab_cont_w" id="tab_searchcont">
+								<div class="tab_cont" id="tab_cont01" style="display:block;">
+									<!-- form -->
+									<fieldset class="lcform">
+										<legend>아이디 (이메일)찾기</legend>
+										<div class="respon_form_tb">
+											<div class="respon_form_tr">
+												<div class="respon_form_cell define_th">
+													<span class="resp_thwpsp">이름</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<input type="text" class="form_input" placeholder="회원가입 시 입력한 이름">
+													<div class="form_warn_para">이름을 입력해주세요.</div>
+												</div>
+											</div>
+											<div class="respon_form_tr">
+												<div class="respon_form_cell define_th mbtype2">
+													<span class="resp_thwpsp">휴대폰 <br class="mb_br">번호</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<div class="rf_hitem_tb">
+														<div class="rf_hitem_td"><input type="text" class="form_input" placeholder="- 없이 숫자만 입력"></div>
+														<div class="rf_hitem_td has_btn" id="stand_btn"><a href="#" class="btn_rfhitem">인증번호 전송</a></div>
+													</div>
+													<div class="form_warn_para">휴대폰 번호를 입력해주세요.</div>
+													<div class="form_result_para">입력하신 번호로 인증번호가 발송되었습니다.</div>
+												</div>
+											</div>
+											<div class="respon_form_tr hidden_tr" id="linkage_tr">
+												<div class="respon_form_cell define_th">
+													<span class="resp_thwpsp">인증번호</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<div class="rf_hitem_tb">
+														<div class="rf_hitem_td"><input type="text" class="form_input" placeholder="인증번호 입력"></div>
+														<div class="rf_hitem_td has_btn" data-follow="#stand_btn"><a href="#" class="btn_rfhitem type2">확인</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="respon_form_botcopy"><p class="impimg_para">인증번호를 받지 못하셨다면, 입력하신 이름과 휴대폰 번호가 등록하신 회원정보와 일치하는지 확인해주세요.</p></div>
+									</fieldset>
+									<!-- // form -->
+								</div>
+								<div class="tab_cont" id="tab_cont02">
+									<!-- form -->
+									<fieldset class="lcform">
+										<legend>비밀번호 찾기</legend>
+										<div class="respon_form_tb">
+											<div class="respon_form_tr">
+												<div class="respon_form_cell define_th">
+													<span class="resp_thwpsp">이름</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<input type="text" class="form_input" placeholder="회원가입 시 입력한 이름">
+													<div class="form_warn_para">이름을 입력해주세요.</div>
+												</div>
+											</div>
+											<div class="respon_form_tr">
+												<div class="respon_form_cell define_th mbtype2">
+													<span class="resp_thwpsp">아이디<br class="mb_br">(이메일)</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<input type="text" class="form_input" placeholder="이메일">
+													<div class="form_warn_para">휴대폰 번호를 입력해주세요.</div>
+												</div>
+											</div>
+											<div class="respon_form_tr">
+												<div class="respon_form_cell define_th mbtype2">
+													<span class="resp_thwpsp">휴대폰 <br class="mb_br">번호</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<div class="rf_hitem_tb">
+														<div class="rf_hitem_td"><input type="text" class="form_input" placeholder="- 없이 숫자만 입력"></div>
+														<div class="rf_hitem_td has_btn" id="stand_btn2"><a href="#" class="btn_rfhitem">인증번호 전송</a></div>
+													</div>
+													<div class="form_warn_para">휴대폰 번호를 입력해주세요.</div>
+													<div class="form_result_para">입력하신 번호로 인증번호가 발송되었습니다.</div>
+												</div>
+											</div>
+											<div class="respon_form_tr hidden_tr" id="linkage_tr2">
+												<div class="respon_form_cell define_th">
+													<span class="resp_thwpsp">인증번호</span>
+												</div>
+												<div class="respon_form_cell define_td">
+													<div class="rf_hitem_tb">
+														<div class="rf_hitem_td"><input type="text" class="form_input" placeholder="인증번호 입력"></div>
+														<div class="rf_hitem_td has_btn" data-follow="#stand_btn2"><a href="#" class="btn_rfhitem type2">확인</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="respon_form_botcopy"><p class="impimg_para">인증번호를 받지 못하셨다면, 입력하신 이름과 휴대폰 번호가 등록하신 회원정보와 일치하는지 확인해주세요.</p></div>
+									</fieldset>
+									<!-- // form -->
+								</div>
+							</div>
+							<!-- // tab contents -->
+						</div>
+						<a href="javascript:;" class="btn_layerclose"><span class="hdtext">닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- layer -->
+		<script>
+			dimLayerShow({
+				target : "#layer_account_search",
+				openCallback : function(){
+					subtabFunc();
+				}
+			});
+
+			// 코딩확인용
+			$(function(){
+				var url = window.location.href.split('?')[1];
+				var url_2 = url !== undefined ? url.split('#')[0] : null;
+				if(url_2 == "check"){
+					// 체크
+					$(".form_warn_para").show();
+				}else if(url_2 == "number"){
+					// 인증번호
+					$(".form_result_para").show();
+					$(".respon_form_botcopy").show();
+					$("#linkage_tr , #linkage_tr2").removeClass("hidden_tr");
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>

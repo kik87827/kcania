@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_zone">
+			<div class="header_in">
+				<div class="header_cont">
+					<h1 class="headlogo"><a href="#" class="headlogo_link"><span class="hdtext">KCANIA</span></a></h1>
+				</div>
+				<div class="header_util">
+					<ul class="hutil_hlist">
+						<li><a href="#" class="hutil">전문가 등록</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="midsection">
+			<div class="midcontents">
+				<div class="midcont_titlow">전문가 등록</div>
+				<div class="midcont_tablow">
+					<div class="swiper-container midtab_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide midtab-slide active"><a href="#" class="midtab"><span class="midtab_text">기본정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">전문가 활동분야</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">경력정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">전문분야</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">추가 전문분야정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">논문정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">특허정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">외부활동정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">자격정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">연구수행</span></a></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(window).on("load", function () {
+                            midTab();
+                        });
+                    </script>
+				</div>
+				<div class="midcont_contlow">
+					<div class="midcont_contbox">
+						<div class="midbox_titlow">
+							<p class="midbox_tit">전문가 기본정보</p>
+						</div>
+						<div class="midbox_contlow">
+							<!-- 211209 수정 -->
+							<table class="midform_tb">
+								<tr>
+									<th><span class="midform_wpsp define_emp">모집요건</span></th>
+									<td>
+										<div class="mdfin_flist_w">
+											<ul class="mdfin_flist">
+												<li>
+													<div class="chkrd_item breaktype">
+														<input type="radio" name="ekind" class="chkrd" id="ekind_01">
+														<label for="ekind_01" class="chkrd_lab">탄소_나노 관련 기업/기관</label>
+													</div>
+												</li>
+												<li>
+													<div class="chkrd_item breaktype">
+														<input type="radio" name="ekind" class="chkrd" id="ekind_02">
+														<label for="ekind_02" class="chkrd_lab">타 분야 전문가 및 컨설팅 등</label>
+													</div>
+												</li>
+												<li>
+													<div class="chkrd_item breaktype">
+														<input type="radio" name="ekind" class="chkrd" id="ekind_03">
+														<label for="ekind_03" class="chkrd_lab">퇴직자 및 기타</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp etype2">아이디<br class="mb_br">(이메일)</span></th>
+									<td>
+										<div class="mdf_data">abc@naver.com</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp">비밀번호</span></th>
+									<td>
+										<div class="mdf_data">*************</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp etype2">비밀번호 <br class="mb_br">확인</span></th>
+									<td>
+										<div class="mdf_data">*************</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp">이름</span></th>
+									<td>
+										<div class="form_input_w">
+											<input type="text" class="form_input" value="홍길동" placeholder="한글 또는 영문">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp etype2">휴대폰<br class="mb_br">번호</span></th>
+									<td>
+										<div class="form_input_w">
+											<input type="text" class="form_input" value="010-1234-5678" placeholder="- 없이 숫자만 입력">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp etype2">이메일<br class="mb_br">(개인)</span></th>
+									<td>
+										<div class="form_infxwrap">
+											<div class="form_input_w">
+												<input type="text" class="form_input" value="abc@naver.com" placeholder="이메일 입력" value="abc@naver.com">
+											</div>
+											<div class="form_haschk">
+												<div class="chkrd_item breaktype">
+													<input type="checkbox" class="chkrd" id="mainmail">
+													<label for="mainmail" class="chkrd_lab">대표메일</label>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp etype2">이메일<br class="mb_br">(직장)</span></th>
+									<td>
+										<div class="form_input_w">
+											<input type="text" class="form_input" value="abc@naver.com" placeholder="이메일 입력">
+										</div>
+									</td>
+								</tr>
+								<!-- <tr>
+									<th><span class="midform_wpsp define_emp">국가</span></th>
+									<td>
+										<div class="form_input_w">
+											<input type="text" class="form_input" value="abc@naver.com" placeholder="국가명">
+										</div>
+									</td>
+								</tr> -->
+								<tr>
+									<th><span class="midform_wpsp define_emp">소속유형</span></th>
+									<td>
+										<div class="mdfin_flist_w short_type">
+											<ul class="mdfin_flist">
+												<li>
+													<div class="chkrd_item breaktype">
+														<input type="radio" name="gtype" class="chkrd" id="gtype_01">
+														<label for="gtype_01" class="chkrd_lab">기관/연구소</label>
+													</div>
+												</li>
+												<li>
+													<div class="chkrd_item breaktype">
+														<input type="radio" name="gtype" class="chkrd" id="gtype_02">
+														<label for="gtype_02" class="chkrd_lab">기업</label>
+													</div>
+												</li>
+												<li>
+													<div class="chkrd_item breaktype">
+														<input type="radio" name="gtype" class="chkrd" id="gtype_03">
+														<label for="gtype_03" class="chkrd_lab">기타</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp">소속명</span></th>
+									<td>
+										<div class="form_input_w">
+											<input type="text" class="form_input" value="abc@naver.com" placeholder="한국탄소나노산업협회">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp etype2">부서명<br class="mb_br">/직급</span></th>
+									<td>
+										<div class="mdf_hinform" style="width:410px" data-pcwid="410">
+											<div class="mdf_hincell">
+												<input type="text" class="form_input" value="기획" placeholder="부서명 입력">
+											</div>
+											<div class="mdf_hincell nbsp"></div>
+											<div class="mdf_hincell">
+												<!-- 211123 수정 -->
+												<!-- <select class="form_select has_placeholder">
+													<option value="0">직급선택</option>
+													<option value="1" selected>부장</option>
+													<option value="2">옵션 2</option>
+												</select> -->
+												<input type="text" class="form_input" value="기획" placeholder="직급 입력">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="midform_wpsp define_emp">최종학력</span></th>
+									<td>
+										<div class="mdf_hinform mdf_tdvlow" style="width:410px" data-pcwid="410">
+											<div class="mdf_hincell res_wid_short">
+												<select class="form_select has_placeholder">
+													<option value="0">학력구분</option>
+													<option value="1">고등학교</option>
+													<option value="2">대학교(3년)</option>
+													<option value="3">대학교(4년)</option>
+													<option value="4">대학원</option>
+												</select>
+											</div>
+											<div class="mdf_hincell nbsp"></div>
+											<div class="mdf_hincell res_wid_long">
+												<div class="inform_field">
+													<div class="inform_fcell has_input"><input type="text" class="form_input inform_input" placeholder="취득학위명"></div>
+													<div class="inform_fcell has_btn"><a href="#" class="btn_informsearch"><span class="hdtext">검색</span></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="mdf_tdvlow">
+											<div class="tdvlow_tit">학교명</div>
+											<div class="tdvlow_cont form_input_w">
+												<input type="text" class="form_input res_ph" placeholder="특수문자 포함한 모든 문자 허용 , 최소 2자, 최대 15자 이내">
+												<!-- mobile plceholder 대체 -->
+												<p class="mb_res_ph">특수문자 포함한 모든 문자 허용 , 최소 2자, 최대 15자 이내</p>
+												<!-- // mobile plceholder 대체 -->
+											</div>
+										</div>
+										<div class="mdf_tdvlow">
+											<div class="tdvlow_tit">전공명</div>
+											<div class="tdvlow_cont form_input_w">
+												<input type="text" class="form_input res_ph" placeholder="특수문자 포함한 모든 문자 허용 , 최소 2자, 최대 15자 이내">
+												<!-- mobile plceholder 대체 -->
+												<p class="mb_res_ph">특수문자 포함한 모든 문자 허용 , 최소 2자, 최대 15자 이내</p>
+												<!-- // mobile plceholder 대체 -->
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<!-- // 211209 수정 -->
+						</div>
+					</div>
+					<div class="btn_midsm_w">
+						<a href="#" class="btn_midsm type2 define_sm">이전</a>
+						<a href="#" class="btn_midsm define_big">저장하고 다음</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_zone">
+            <div class="footer_in">
+                <div class="footer_incell">
+                    <p class="footer_copy">COPYRIGHT(c)2012 KCANIACN. ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>

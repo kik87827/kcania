@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="./css/jqueryui.css" rel="stylesheet">
+    <link href="./css/contents.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <script src="./js/front.js"></script>
+    <title>탄소&middot;나노 융합 정보 플랫폼 서비스</title>
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_zone">
+			<div class="header_in">
+				<div class="header_cont">
+					<h1 class="headlogo"><a href="#" class="headlogo_link"><span class="hdtext">KCANIA</span></a></h1>
+				</div>
+				<div class="header_util">
+					<ul class="hutil_hlist">
+						<li><a href="#" class="hutil">전문가 등록</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="midsection">
+			<div class="midcontents">
+				<div class="midcont_titlow">전문가 등록</div>
+				<div class="midcont_tablow">
+					<div class="swiper-container midtab_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">기본정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">전문가 활동분야</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">경력정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">전문분야</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">추가 전문분야정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">논문정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">특허정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">외부활동정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">자격정보</span></a></div>
+                            <div class="swiper-slide midtab-slide"><a href="#" class="midtab"><span class="midtab_text">연구수행</span></a></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(window).on("load", function () {
+                            midTab();
+							subtabFunc();
+                        });
+                    </script>
+				</div>
+				<div class="midcont_contlow">
+					<div class="midcont_contbox">
+						<div class="midbox_titlow">
+							<p class="midbox_tit">개인정보 수집 &middot; 이용 동의서</p>
+						</div>
+						<div class="midbox_contlow">
+							<div class="midc_agrguide">
+								(사)한국탄소나노산업협회는 개인정보보호법에 의거 전문가POOL 등록과 관련하여,<br>
+								아래와 같이 “개인정보 수집·이용”에 동의를 얻고자 합니다.
+								다음 아래 사항을 자세히 읽어보신 후 동의 여부를 결정하여 주시기 바랍니다.
+							</div>
+							<div class="midc_vagr_list_w">
+								<ul class="midc_vagr_list">
+									<li>
+										<div class="midc_agr_low">
+											<p class="agr_chktit">개인정보를 제공받는 자</p>
+											<div class="agr_chksub">(사)한국탄소나노산업협회</div>
+										</div>
+									</li>
+									<li>
+										<div class="midc_agr_low">
+											<p class="agr_chktit">개인정보의 이용 목적</p>
+											<div class="agr_chksub">(사)한국탄소나노산업협회의 전문가 POOL 등록 및 관리 등으로 활용됩니다.</div>
+										</div>
+									</li>
+									<li>
+										<div class="midc_agr_low">
+											<p class="agr_chktit">이용 또는 제공하는 개인 정보의 항목</p>
+											<div class="agr_chksub">(사)한국탄소나노산업협회의 전문가 POOL 등록 및 관리 등으로 활용됩니다.</div>
+											<div class="agr_data_tb_low">
+												<table class="data_htb">
+													<thead>
+														<tr>
+															<th class="wid_xlg"><span class="data_thtxt">항목</span></th>
+															<th class="wid_mid"><span class="data_thtxt">수집목록</span></th>
+															<th class="wid_sm"><span class="data_thtxt">보유기간</span></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="wid_xlg align_left"><p class="mb_thtxt">항목</p><div class="data_tdtxt">성명, 주민등록번호(외국인등록번호), 휴대전화번호, 유선전화번호, 소속 및 직위, 이메일, 자택주소, 학력 및 경력사항, 전문기능분야, 산업재산권, 자격증 등</div></td>
+															<td class="wid_mid"><p class="mb_thtxt">수집목록</p><div class="data_tdtxt">전문가 POOL등록</div></td>
+															<td class="wid_sm"><p class="mb_thtxt">보유기간</p><div class="data_tdtxt">5년</div></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="midc_agr_low">
+											<p class="agr_chktit">개인정보 수집 동의 거부의 권리</p>
+											<div class="agr_chksub">신청자는 개인정보 수집·이용 동의에 거부할 권리가 있습니다.<br>다만 개인정보 수집을 거부하실 경우 (사)한국탄소나노산업협회 전문가POOL 활동과 관련하여 일부 제한을 받을 수 있습니다.</div>
+										</div>
+									</li>
+									<li>
+										<div class="midc_agr_low">
+											<p class="agr_chktit">개인정보 제3자 제공 안내</p>
+											<div class="agr_chksub">(사)한국탄소나노산업협회는 수집된 개인 정보를 제3자에게 제공하지 않습니다.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="midc_botchk_w">
+								<div class="chkrd_item">
+									<input type="checkbox" class="chkrd" id="midc_botchk01">
+									<label for="midc_botchk01" class="chkrd_lab">동의함</label>
+								</div>
+								<div class="chkrd_item">
+									<input type="checkbox" class="chkrd" id="midc_botchk02">
+									<label for="midc_botchk02" class="chkrd_lab">동의하지 않음</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_zone">
+            <div class="footer_in">
+                <div class="footer_incell">
+                    <p class="footer_copy">COPYRIGHT(c)2012 KCANIACN. ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>

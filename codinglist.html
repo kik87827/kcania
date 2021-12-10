@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1200" />
+<link rel="stylesheet" href="css/reset.css" />
+<script src="./js/jquery-1.12.4.min.js"></script>
+<title></title>
+<style type="text/css">
+*{margin:0;padding:0;}
+ul{list-style: none;margin:0;padding:0;}
+table {border-collapse:collapse; border-spacing:0;}
+table th, strong {font-weight:normal;}
+body{margin:20px;}
+h1{margin:0 0 10px 0;color:#000;font-size:30px;font-family: 'NotoSans-Regular'; font-weight:700}
+a {text-decoration:none;color:#000;}
+a:hover {text-decoration:underline;}
+.list_w table {	width: 100%;	margin: 20px auto;	border-top: solid 2px #555;font-family: 'NotoSans-Regular';	border-collapse: collapse;	border-spacing: 0;	font-size: 17px; text-align:center;}
+.list_w table tr:hover {background:#f3f3f3;}
+.list_w table th {font-family: 'NotoSans-Regular';font-size: 17px;	padding: 10px 0;	border: solid 1px #ddd;	background: #efefef;vertical-align:middle;}
+.list_w table td {font-family: 'NotoSans-Regular';	font-size: 17px;padding: 10px 3px;	border: solid 1px #ccc;vertical-align:middle;}
+.lastmdate {color: #1155CC;}
+.stand_by {color:#777;}
+.stop {color:#787878;}
+.ing {color:blue !important;}
+.bgo{text-align:left;color:#fff;font-size:15px !important;}
+.end {background:green !important;color:#fff !important;}
+.defer{color:red;}
+.modify{color:#ff5400;}
+.list_w table td.link,
+.list_w table td.td_url,
+.list_w table td.etc{text-align: left; padding-left:10px;}
+.ing_w{border:1px solid #000;margin:0 0 20px;padding:5px 10px;}
+.t_tit{margin:20px 0 10px ;font-size:20px;}
+.ing_w .inglist li{padding:10px;border-bottom:1px solid #999;}
+.ing_w .inglist li:last-child{border-bottom:0;}
+.ing_w .inglist .date{font-weight:bold;}
+.ing_w .inglist .text .ingtext{font-weight:bold;}
+.guidelist{padding:8px 0;}
+.guidelist li{padding:2px 10px;}
+.alignleft{text-align:left;padding-left:10px !important;}
+.depth td{background:#34b371;color:#fff;text-align:center;font-size:20px;font-family: 'NotoSans-Regular';padding:10px;}
+.dev td{background:#34b371;color:#fff;text-align:center;font-size:20px;font-family: 'NotoSans-Regular';padding:10px;}
+.dev_notice{border-top:1px solid #000;border-bottom:1px solid #000;padding:10px;margin:30px 0;}
+.header_pixed{position:fixed;top:0;left:0;width:100%;background:#fff;box-sizing:border-box;padding:20px;border-bottom:1px solid #000;}
+.header_pixed p{font-family: 'NotoSans-Regular';font-size: 17px;margin-top:5px;}
+</style>
+<script>
+	$(window).on("load",function(){
+		$("#guide_wrap").css("padding-top",$(".header_pixed").outerHeight());
+	});
+	function myPopup(myURL, title, myWidth, myHeight) {
+	var left = (screen.width - myWidth) / 2;
+	var top = (screen.height - myHeight) / 4;
+	var myWindow = window.open(myURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + myWidth + ', height=' + myHeight + ', top=' + top + ', left=' + left);
+	}
+</script>
+</head>
+<body id="guide">
+
+<!-- eniter wrap -->
+<div id="guide_wrap">
+	<div class="header_pixed">
+		<h1>KCANIA 한국 탄소&middot;나노 정보 플랫폼</h1>
+		<p>End page : <span class="curr_n"></span>page / Total page : <span class="total_n"></span>page</p>
+		<p>진행율 : <span class="per"></span></p>
+	</div>
+   <div class="list_w">
+		<table class="codinglist">
+			<colgroup>
+				<col width="3%" />
+				<col />
+				<col width="35%" />
+				<col width="10%" />
+				<col width="30%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>no.</th>
+					<th>filename/link</th>
+					<th>HTML 파일명</th>
+					<th>현황</th>
+					<th>전달사항</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="depth">
+					<td colspan="5">개발시 참고 페이지</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="popup.html" target="_blank">popup 샘플</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="page.html" target="_blank">page 샘플</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="page2_login_before.html" target="_blank">page 샘플 - 로그인전</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="page2_login_after.html" target="_blank">page 샘플 - 로그인후</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr class="depth">
+					<td colspan="5">메인</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="main.html" target="_blank">메인</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr class="depth">
+					<td colspan="5">회원</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_login.html" target="_blank">로그인</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_login.html?check" target="_blank">로그인_체크</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_account_search.html" target="_blank">아이디찾기</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_account_search.html?check" target="_blank">아이디찾기_체크</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_account_search.html?number" target="_blank">아이디찾기_인증번호</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_account_result.html" target="_blank">아이디찾기_결과</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_account_search.html" target="_blank">비밀번호찾기</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo">비밀번호 찾기 탭 클릭시</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_account_search.html?number" target="_blank">비밀번호찾기_인증번호</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo">비밀번호 찾기 탭 클릭시</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_pwsearch_new.html" target="_blank">비밀번호찾기_새비밀번호</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_join_form.html" target="_blank">일반회원가입</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_join_end.html" target="_blank">일반회원가입_완료</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_guide.html" target="_blank">전문가등록_00_안내</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_basic.html" target="_blank">전문가등록_기본정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_expert_activities.html" target="_blank">전문가등록_전문가활동분야</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_career.html" target="_blank">전문가등록_경력정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_kind.html" target="_blank">전문가등록_전문분야</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_kind_data.html" target="_blank">전문가등록_전문분야정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_thesis.html" target="_blank">전문가등록_논문정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_invention.html" target="_blank">전문가등록_특허정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_outside.html" target="_blank">전문가등록_외부활동정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_qualification.html" target="_blank">전문가등록_자격정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_fulfill.html" target="_blank">전문가등록_연구수행</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_registration_end.html" target="_blank">전문가등록_07_완료</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="member_expert_personal_agree.html" target="_blank">전문가등록_07_개인정보동의</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr class="depth">
+					<td colspan="5">마이페이지</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_interest_01_company_data.html" target="_blank">MY관심_01_기업정보</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_interest_02_product_data.html" target="_blank">MY관심_02_제품정보</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_activity_01_inquiry_list.html" target="_blank">MY활동_01_문의_목록</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_activity_02_inquiry_registration.html" target="_blank">MY활동_02_문의_등록</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_activity_03_inquiry_ing.html" target="_blank">MY활동_03_문의_처리중</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_activity_04_inquiry_modify.html" target="_blank">MY활동_04_문의_수정</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_activity_05_inquiry_answer_end.html" target="_blank">MY활동_05_문의_답변완료</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_product_01_list.html" target="_blank">제품개발의뢰_01_목록</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_product_02_registration.html" target="_blank">제품개발의뢰_02_등록</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_product_03_registration_application.html" target="_blank">제품개발의뢰_03_등록_응용분야</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_product_04_registration_ing.html" target="_blank">제품개발의뢰_04_등록_처리중</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_product_05_registration_answer_end.html" target="_blank">제품개발의뢰_05_등록_답변완료</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_01_password_sure.html" target="_blank">MY정보_01_비밀번호확인</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_02_profile_02_member_modify.html" target="_blank">MY정보_02_회원정보수정</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_01_basic.html" target="_blank">MY정보_03_전문가프로필수정_01_기본정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_02_activity.html" target="_blank">MY정보_03_전문가프로필수정_02_전문가활동분야</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_03_career.html" target="_blank">MY정보_03_전문가프로필수정_03_경력정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_04_kind.html" target="_blank">MY정보_03_전문가프로필수정_04_전문분야</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_05_kind.html" target="_blank">MY정보_03_전문가프로필수정_05_전문분야정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_05_kind.html" target="_blank">MY정보_03_전문가프로필수정_05_추가버튼선택시</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_06_thesis.html" target="_blank">MY정보_03_전문가프로필수정_06_논문정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_07_patent.html" target="_blank">MY정보_03_전문가프로필수정_07_특허정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_08_outside.html" target="_blank">MY정보_03_전문가프로필수정_08_외부활동정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_09_qualification.html" target="_blank">MY정보_03_전문가프로필수정_09_자격정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_mydata_03_profile_10_fulfill.html" target="_blank">MY정보_03_전문가프로필수정_10_연구수행정보</a></td>
+					<td class="td_url"></td>
+					<td class="work end"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="mypage_04_dropout.html" target="_blank">MY활동_04_회원탈퇴</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+			</tbody>
+		</table>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+	$(function () {
+		chkList();
+	});
+	function myPopup(myURL, title, myWidth, myHeight) {
+	var left = (screen.width - myWidth) / 2;
+	var top = (screen.height - myHeight) / 4;
+	var myWindow = window.open(myURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + myWidth + ', height=' + myHeight + ', top=' + top + ', left=' + left);
+	}
+	function chkList(){
+		var tatal_n = $(".codinglist tr").length - $(".depth").length-1;
+		var curr_n = 0;
+		var $ctd = $(".codinglist td.work"),
+			$ctr = $(".codinglist tr");
+	
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		var yyyy = today.getFullYear();
+	
+		if(dd<10) {
+			dd = '0'+dd
+		} 
+	
+		if(mm<10) {
+			mm = '0'+mm
+		} 
+	
+		today = yyyy + '-' + mm + '-' + dd;
+		
+		$ctr.each(function(index) {
+			var $this = $(this),
+				$td = $this.find("td.work");
+			if($td.hasClass("end")){
+				curr_n++
+				$td.text("완료");
+			} else {
+				if($td.hasClass("ing")){
+					$td.text(today+" 작업중").addClass('ing');
+				}else{
+					$td.text("대기중").addClass('stand_by');
+				}
+			}
+		});
+		$(".codinglist tr").each(function() {
+			var index = $(".codinglist tr").not('.depth').index(this);
+			$(this).children(".codinglist td.no").text(index);
+		});
+		$("td.link > a").each(function(){
+			var $this = $(this),
+				$t_href = $this.attr("href");
+			if($this.parents("td").hasClass("else")){return;}
+			$this.parent("td").next(".td_url").append("<div class='link_w'><a href='"+$t_href+"' target='_blank'>"+$t_href+"</a></div>");
+			$this.wrapAll("<div class='link_w' />");
+		});
+		$('.total_n').text(tatal_n);
+		$('.curr_n').text(curr_n);
+		$('.per').text(Math.floor((curr_n/tatal_n)*100) + '%');
+	}
+	</script>
+</body>
+</html>
